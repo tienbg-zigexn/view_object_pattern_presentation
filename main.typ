@@ -98,7 +98,7 @@ Helpers OK nhưng cần hạn chế vì:
 - Khó theo dõi dependencies.
 - Dễ test hơn logic trong views nhưng vẫn hạn chế.
 
-= Decorator / Wrapper
+= Decorator Pattern
 
 == Decorator
 
@@ -175,7 +175,7 @@ class ProductDecorator < Draper::Decorator
 
 - Hoặc khi logic không liên quan gì đến model.
 
-= View Object / Presenter
+= View Object Pattern
 
 == View Object
 
