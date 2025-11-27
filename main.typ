@@ -412,12 +412,15 @@ class ViewActions::Category::ShowViewObject < ApplicationViewObject
   # Parameter validation
   required_params :category, :items
 
+  alias controller context # for compatibility
+
   # Nhận context thay vì controller
-  def initialize(context:, category:, items:)
+  def initialize(context:, **params)
     @context = context
-    @category = category
-    @items = items
+    assign_required_params(params)
+    assign_required_lazy_params(params)
   end
+
 
   def title
     "#{category.name} の買取価格"
