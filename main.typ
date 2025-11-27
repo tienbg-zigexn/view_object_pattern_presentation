@@ -1,4 +1,5 @@
 #import "@preview/diatypst:0.8.0": *
+#set outline(depth: 1)
 
 #show: slides.with(
   title: "View Object Pattern", // Required
@@ -478,7 +479,7 @@ end
 
 #heading(level: 1, numbering: none, outlined: false)[Thank you]
 
-= Phụ lục
+#heading(numbering: none, outlined: false)[Phụ lục]
 
 == Example RSpec on a Decorator
 
